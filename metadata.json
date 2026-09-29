@@ -1,0 +1,6 @@
+{
+  "name": "MeetingMind",
+  "description": "Executive relationship intelligence and AI meeting prep assistant remembering past conversations with contacts using Hindsight memory and Groq LLM.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

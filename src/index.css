@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", serif;
+  --font-sans: "IBM Plex Sans", sans-serif;
+
+  --color-ink-navy: #12151C;
+  --color-ink-navy-light: #1A1D24;
+  --color-ink-navy-container: #191C23;
+
+  --color-warm-paper: #EFEAE0;
+  --color-warm-paper-light: #F7F4EE;
+  --color-warm-paper-surface: #FEF9EF;
+
+  --color-muted-gold: #C89B3C;
+  --color-muted-gold-light: #F0BF5C;
+  --color-muted-gold-container: #FCCA66;
+  --color-muted-gold-dark: #7B5900;
+
+  --color-slate-ui: #6B7280;
+  --color-slate-dark: #46464B;
+  --color-sage: #7A8B6F;
+  --color-hairline: #DDD7CD;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    background-color: #FEF9EF;
+    color: #1D1C16;
+  }
+
+  /* Material symbols font settings */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    user-select: none;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+  }
+}
+
+/* Hide scrollbar for clean ledger aesthetics */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
